@@ -6,7 +6,7 @@ Closed-loop, LLM-driven AutoML that learns to **trial–and–correct** and **us
 ---
 ## 🧩 Framework Overview
 <p align="center">
-  <img src="./tests/assets/method.png">
+  <img src="./data/assets/method.png">
 </p>
 ### 1. Feature Generation Module
 The feature generation stage leverages an LLM to create new candidate features using dataset metadata, column descriptions, and partial samples drawn **only from the training set**. The LLM receives a structured prompt containing:
