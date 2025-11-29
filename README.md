@@ -22,20 +22,21 @@ Closed-loop, LLM-driven AutoML that learns to **trial–and–correct** and **us
 
 ---
 
-## Quick Start (ensemble-only)
-
-**Python ≥ 3.9 (3.10 recommended)**
-
-```bash
-# (optional) create and activate a virtual environment
-python -m venv .venv && . .venv/bin/activate
-
-# minimal dependencies for the ensemble component
-pip install -U numpy pandas scikit-learn xgboost lightgbm
+## 🚀 Quick Start
+### Create Conda Environment and Install Dependencies
+```bush
+conda create -n sage-loop python=3.11.12
+conda activate sage-loop
+cd SAGE-Loop
+pip install -r requirements.txt
 ```
-
-Then follow the instructions under `SAGE-Loop/` to run examples (use your local datasets).
-
+### Run SAGE-Loop
+```bush
+cd SAGE-Loop
+export OPENAI_BASE_URL="openai base_url"
+export OPENAI_API_KEY="your aip_key"
+./run_SAGE_Loop.sh
+```
 ---
 
 ## Data
